@@ -106,11 +106,10 @@ to categorize each face based on the emotion expressed, assigning it to one of s
     - As we can see, the model consistently shows higher performance when applied to transformed data compared to original data. This effect is due to dimensionality reduction (PCA and HOG), which reduces memory and time consumption while retaining key data components.
     - The CNN_MLP model demonstrates the best performance as expected in large datasets.
     - Following that is the SVM model.
-      
-    ![](./materials/overall.png)
 
    **Emotion Category Analysis**
-
+   
+    ![](./materials/overall.png)
     - Most Accurate (Highest Precision and Recall):
     
       + Happy: Precision (0.83), Recall (0.83), F1-score (0.83)
