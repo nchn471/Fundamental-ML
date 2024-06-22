@@ -45,7 +45,7 @@ Feel free to modify and extend the notebook to explore further aspects of the da
 
 ## 📦 Process
 
-1. Prerequisite
+1. **Prerequisite**
 
     This section provides some basic steps for accessing and visualizing the dataset.
 
@@ -54,7 +54,7 @@ to categorize each face based on the emotion expressed, assigning it to one of s
 
     ![](./materials/image.png)
 
-2. Principle Component Analysis
+2. **Principle Component Analysis**
 
     ![](./materials/pca_explain.png)
     From 0 to 500 principal components, there is a sharp rise in explained variance initially, indicating that these components capture a significant amount of the data's variance. 
@@ -66,7 +66,7 @@ to categorize each face based on the emotion expressed, assigning it to one of s
     Visualizing the first image with different principal components
     ![](./materials/pca_compare.png)
 
-3. Image Classification
+3. **Image Classification**
 
     **PIPELINE**
 
@@ -99,7 +99,7 @@ to categorize each face based on the emotion expressed, assigning it to one of s
 
     > **Note**: In MLP, there are additional models with simple CNNs using Keras and TensorFlow to improve performance (to be discussed later).
 
-4. Evaluating Classification Performance 
+4. **Evaluating Classification Performance**
 
     ![](./materials/metric.png)
 
