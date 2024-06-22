@@ -27,7 +27,7 @@ This project is designed to be completed in the following steps:
 
 1. **Fork the Project**: Click on the ```Fork``` button on the top right corner of this repository, this will create a copy of the repository in your own GitHub account. Complete the table at the top by entering your team member names.
 
-2. **Download the Dataset**: Download the facial expression dataset from the following [link](https://drive.google.com/drive/folders/1DhafdsTdIfofR6Oty3sNnO206gdnlZS4?usp=drive_link) and place it in the **/data** directory:
+2. **Download the Dataset**: Download the facial expression dataset and model file from the following [link](https://drive.google.com/drive/folders/1DhafdsTdIfofR6Oty3sNnO206gdnlZS4?usp=drive_link) and place it in the **/data** directory:
 
 3. **Complete the Tasks**: Open the ```notebooks/EDA.ipynb``` notebook in your Jupyter Notebook environment. The notebook is designed to guide you through various tasks, including:
     
@@ -80,9 +80,9 @@ This project is designed to be completed in the following steps:
     </p>
 
     
-    2. **Principle Component Analysis (PCA)**
+    2. **Principle Component Analysis (PCA)**: dimensionality reduction with explained_variance_
 
-    > This is full pipeline
+    Using these algorithms we designed a full pipeline:
     
     **PIPELINE**
 
@@ -93,9 +93,6 @@ This project is designed to be completed in the following steps:
     | `Standard Scaler`           | Normalize data                     |
     | `Classification Algorithms` | Model methods                      |
     
-    
-
-
     We will tune the hyperparameters of this pipeline with `GridSearchCV` using a parameter grid based on each model to find the best fine-tuned model.
 
     The classification methods include: `Random Forest`, `Logistic Regression`, `Support Vector Machine (SVM)`, and `multi-layer perceptron (MLP)`.
@@ -104,7 +101,7 @@ This project is designed to be completed in the following steps:
     - **Original Data**: the original data (without HOG and PCA)
     - **Transformed Data**: full pipeline
 
-    > **Note**: To increase the performance of model we use additioanl method CNN
+    > **Note**: To enhance the model performance, we incorporated an additional method: Convolutional Neural Networks (CNN)
 
     - When working with large datasets consisting of image pixels, traditional Machine Learning methods tend to be less effective in terms of accuracy and computational efficiency.
 
