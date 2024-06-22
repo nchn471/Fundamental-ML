@@ -108,3 +108,19 @@ to categorize each face based on the emotion expressed, assigning it to one of s
     - Following that is the SVM model.
       
     ![](./materials/overall.png)
+
+   **Emotion Category Analysis**
+
+    - Most Accurate (Highest Precision and Recall):
+    
+      + Happy: Precision (0.83), Recall (0.83), F1-score (0.83)
+      + Surprise: Precision (0.81), Recall (0.73), F1-score (0.76)
+    - Most Errors (Lowest Precision and Recall):
+    
+      + Fear: Precision (0.55), Recall (0.46), F1-score (0.50)
+      + Disgust: Precision (0.73), Recall (0.58), F1-score (0.64) - although better than Fear, still relatively lower in recall.
+    
+    - Happy and Surprise categories are the easiest for the CNN-MLP model to predict accurately, likely due to distinct and consistent patterns in data for these emotions.
+    - Fear and Disgust are the most challenging, possibly due to their subtle and overlapping expressions, making them harder to distinguish.
+    
+    **Winner Model: CNN-MLP with 64% accuracy**
