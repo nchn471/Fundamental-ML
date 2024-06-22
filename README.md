@@ -32,13 +32,29 @@ This project is designed to be completed in the following steps:
 3. **Complete the Tasks**: Open the ```notebooks/EDA.ipynb``` notebook in your Jupyter Notebook environment. The notebook is designed to guide you through various tasks, including:
     
     1. Prerequisite
+    2. Principle Component Analysis
+    3. Image Classification
+    4. Evaluating Classification Performance 
+
+    Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
+
+5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
+
+
+Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
+
+## 📦 Process
+
+1. Prerequisite
 
     This section provides some basic steps for accessing and visualizing the dataset.
 
-    The data consists of grayscale images of faces, each measuring 48x48 pixels. The faces have been automatically aligned to be roughly centered and occupy a similar area within each image. The task is to categorize each face based on the emotion expressed, assigning it to one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset contains a total of 35,887 examples.
+    The data consists of grayscale images of faces, each measuring 48x48 pixels. The faces have been automatically aligned to be roughly centered and occupy a similar area within each image. The task is  
+to categorize each face based on the emotion expressed, assigning it to one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). The dataset contains a total of 35,887 examples.
+
     ![](./materials/image.png)
 
-    2. Principle Component Analysis
+2. Principle Component Analysis
 
     ![](./materials/pca_explain.png)
     From 0 to 500 principal components, there is a sharp rise in explained variance initially, indicating that these components capture a significant amount of the data's variance. 
@@ -50,7 +66,7 @@ This project is designed to be completed in the following steps:
     Visualizing the first image with different principal components
     ![](./materials/pca_compare.png)
 
-    3. Image Classification
+3. Image Classification
 
     **PIPELINE**
 
@@ -83,15 +99,8 @@ This project is designed to be completed in the following steps:
 
     > **Note**: In MLP, there are additional models with simple CNNs using Keras and TensorFlow to improve performance (to be discussed later).
 
-    4. Evaluating Classification Performance 
+4. Evaluating Classification Performance 
 
     ![](./materials/metric.png)
 
     ![](./materials/overall.png)
-
-    Make sure to run all the code cells in the ```EDA.ipynb``` notebook and ensure they produce output before committing and pushing your changes.
-
-5. **Commit and Push Your Changes**: Once you've completed the tasks outlined in the notebook, commit your changes to your local repository and push them to your forked repository on GitHub.
-
-
-Feel free to modify and extend the notebook to explore further aspects of the data and experiment with different algorithms. Good luck.
